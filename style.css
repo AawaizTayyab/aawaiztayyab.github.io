@@ -484,7 +484,7 @@ body{
 
 
 /* Small Mobile (max-width: 480px) */
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 480px) {
 
     body {
         font-size: 14px;
@@ -574,9 +574,6 @@ body{
         line-height: 1.6;
         margin-left: 18px;
     }
-
-
-
     .field input {
         font-size: 16px;
     }
