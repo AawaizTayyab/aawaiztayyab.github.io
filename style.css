@@ -1,0 +1,539 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d7d7d7;
+}
+.navebar{
+    height: 3rem;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+}
+.nav{
+    height: 3rem;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0707073f;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 2rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.color:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+/* Mainbody */
+.mainbody{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.picture{
+    background-color: black;
+    width: 55%;
+    height: 100vh;
+    top: none;
+}
+.name{
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.name_data{
+    height: 45vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.name h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name_data p{
+    color: rgb(100, 100, 100);
+}
+.icon{
+    height: 6vh;
+    width: 10%;
+}
+.icon a{
+    text-decoration: none;
+}
+.icon i{
+    color: black;
+    height: 5vh;
+    width: 90%;
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* About ME */
+.about{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.main_box{
+    height: 10vh;
+    width: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_data{
+    height: 60vh;
+    width: 58%;
+}
+.about_data p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(56, 56, 56);
+}
+/* Skills */
+.skills{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills_picture{
+    height: 70vh;
+    width: 100%;
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skill_part1{
+    height: 30vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skill{
+    height: 28vh;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.skill p{
+    font-size: 20px;
+}
+/* Experiences */
+.experience{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.experiences_data{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.experience1{
+    height: 30vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.experience_heading{
+    height: 6vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.eperience_data{
+    height: 20vh;
+    width: 80%;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.experience2{
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.experience3{
+    height: 18vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+/* Contact Me */
+.contact{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.contact_data{
+    height: 76vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.field{
+    height: 15vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-evenly;
+}
+.field label{
+    padding-left: 20px;
+}
+.field input{
+    height: 8vh;
+    color: black;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+}
+.contact_data button{
+    height: 8vh;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* ======================
+   TABLET VIEW (max-width:1024px)
+====================== */
+@media (max-width: 1024px) {
+
+    /* Navbar */
+    .nav {
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .mainbody {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .picture {
+        width: 100%;
+        height: 45vh;   /* professional picture size */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .name {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .name_data {
+        width: 75%;
+        text-align: center;
+    }
+
+    .icon {
+        width: 15%;
+    }
+
+    /* Professional Square Main Boxes */
+    .main_box {
+        width: 40%;
+        height: 10vh;
+        border-radius: 12px;
+        background-color: transparent;
+        border: 2px solid #000;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    /* About Section */
+    .about_data {
+        width: 80%;
+        height: auto;
+        text-align: justify;
+    }
+
+    /* Skills Section */
+    .skills_picture {
+        height: auto;
+    }
+
+    .skill_part1 {
+        flex-wrap: wrap;
+        gap: 20px;
+        height: auto;
+    }
+
+    .skill {
+        width: 22%;
+        height: 22vh;
+        
+        border-radius: 12px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+        padding: 10px;
+    }
+
+    .skill img {
+        height: 14vh;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    /* Experience Section */
+    .experiences_data {
+        height: auto;
+    }
+
+    .experience1,
+    .experience2,
+    .experience3 {
+        width: 85%;
+        height: auto;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+        margin-top: 20px;
+    }
+
+    .experience_heading {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
+
+    .eperience_data {
+        width: 95%;
+        height: auto;
+    }
+
+    /* Contact Section */
+    .contact_data {
+        height: auto;
+    }
+
+    .field,
+    .contact_data button {
+        width: 80%;
+    }
+
+    .field input {
+        height: 7vh;
+    }
+
+}
+
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .nav {
+        display: none;
+    }
+
+    .nav a {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .mainbody {
+        flex-direction: column;
+    }
+
+    .picture {
+        height: 40vh;
+    }
+
+    .name {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .name_data {
+        width: 90%;
+        text-align: center;
+    }
+
+    .icon {
+        width: 20%;
+    }
+
+    .main_box {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .about_data {
+        width: 90%;
+    }
+
+    .skills_picture {
+        height: auto;
+    }
+
+    .skill_part1 {
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        width: 40%;
+        height: auto;
+    }
+
+    .experience1,
+    .experience2,
+    .experience3 {
+        height: auto;
+    }
+
+    .experiences_data {
+        height: auto;
+    }
+
+    .experience_heading {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .eperience_data {
+        height: auto;
+        width: 95%;
+    }
+
+    .field, .contact_data button {
+        width: 90%;
+    }
+}
+
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .name h1 {
+        font-size: 22px;
+    }
+
+    .name_heading h1 {
+        font-size: 20px;
+    }
+
+    .skill {
+        width: 80%;
+    }
+
+    .skill img {
+        height: 15vh !important;
+    }
+
+    .main_box {
+        width: 85%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .about_data p {
+        font-size: 15px;
+    }
+
+    .experience_heading h3 {
+        font-size: 14px;
+    }
+
+    .eperience_data ul li {
+        font-size: 14px;
+    }
+
+    .field input {
+        font-size: 16px;
+    }
+
+    .contact_data button {
+        font-size: 16px;
+    }
+}
+
