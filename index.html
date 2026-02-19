@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="boxes">
+            <a href="#pic">
+                <div class="box color">
+                 <i class="fa-solid fa-house"></i>
+                 <p>Home</p>
+            </div>
+            </a>
+            <a href="#about">
+                <div class="box color">
+                <i class="fa-solid fa-user"></i>
+                <p>About</p>
+            </div>
+            </a>
+            <a href="#skill">
+                <div class="box color">
+                <i class="fa-solid fa-microchip"></i>
+                <p>Skills</p>
+            </div>
+            </a>
+            <a href="#contact">
+                <div class="box color">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Contact</p>
+            </div>
+            <a href="aawaiztayyabcv.pdf" download id="cv">
+                <div class="box color">
+                <i class="fa-solid fa-download"></i>
+                <p>Download Cv</p>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Watsapp btn -->
+     <div class="watsapp_btn">
+         <a href="https://wa.me/923287345942?text=Hello%20I%20found%20you%20through%20your%20portfolio"target="_blank"class="whatsapp-float">
+         <i class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i></a>
+     </div>
+
+
+        <!-- Body -->
+         <div class="mainbody">
+              <div class="pic" id="pic">
+                <div class="pic_text">
+                    <h1>Hi </h1>
+                    <h1>I am Aawaiz Tayyab</h1>
+                    <h3>Frontened Developer</h3>
+                </div>
+                <div class="picture">
+                    <img src="aawaiztayyabpic.png">
+                </div>
+              </div>
+              <!-- About -->
+               <div class="about" id="about">
+                <div class="about_box">
+                    <div class="about_bx">
+                        <h1>ABOUT ME</h1>
+                    </div>
+                </div>
+                <div class="about_text">
+                    <p>I am a Software Engineering student with a strong passion for web development and problem-solving. I have experience in C, C++, Python, JavaScript, SQL, and front-end technologies such as HTML and CSS. I enjoy creating responsive and user-friendly web applications that solve real-world problems.I continuously improve my skills through projects and self-learning, focusing on both front-end and back-end development. I have a solid understanding of software fundamentals and modern web technologies. My goal is to become a skilled full-stack developer and contribute to innovative software solutions. I am motivated, detail-oriented, and committed to writing clean, efficient, and maintainable code.</p>
+                </div>
+               </div>
+
+               <!-- Skills -->
+               <div class="skills" id="skill">
+                <div class="about_box">
+                    <div class="about_bx">
+                        <h1>SKILLS</h1>
+                    </div>
+                </div>
+                <div class="skill_pic">
+                    <div class="part1">
+                        <div class="sk_pic">
+                            <img src="image1.png">
+                        </div>
+                        <div class="sk_pic">
+                            <img src="image2.png">
+                        </div>
+                        <div class="sk_pic">
+                            <img src="image3.png">
+                        </div>
+                        <div class="sk_pic">
+                            <img src="image4.png">
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <div class="sk_pic">
+                            <img src="image5.png">
+                        </div>
+                        <div class="sk_pic">
+                            <img src="image6.png">
+                        </div>
+                        <div class="sk_pic">
+                            <img src="image7.png">
+                        </div>                        
+                    </div>
+                </div>
+             </div>
+             <!-- Contact -->
+              <div class="contact" id="contact">
+                <div class="about_box">
+                    <div class="about_bx">
+                        <h1>CONTACT</h1>
+                    </div>
+                </div>
+                 <div class="fields">
+                   <form id="contact-form">
+                        <div class="field">
+                            <label>Name</label>
+                                <input type="text" name="name" placeholder="Enter Name" required>
+                       </div>
+
+                    <div class="field">
+                           <label>Email</label>
+                                 <input type="email" name="email" placeholder="Enter Email" required>
+                      </div>
+
+                    <div class="field">
+                              <label>Message</label>
+                          <textarea name="message" placeholder="Type Here" required></textarea>
+                           </div>
+
+                            <button type="submit" class="color2">Send</button>
+                        </form>
+
+              </div>
+
+                           <!-- Download Cv-->
+              <div class="cv2">
+                <a href="aawaiztayyabcv.pdf" download>
+                  <div class="download">
+                    <div class="download_btn color4"><p>Download CV</p></div>
+                  </div>
+                 </a>
+              </div>
+           </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("QvZnk6Y1ID3I6gp3Z");
+})();
+</script>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "Email@123",
+    "template_lef2dgm",
+    this
+  ).then(function(){
+    alert("Message Sent Successfully!");
+    document.getElementById("contact-form").reset();
+  }, function(error){
+    alert("Failed to send message");
+    console.log(error);
+  });
+});
+</script>
+
+</body>
+</html>

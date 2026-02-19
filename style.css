@@ -1,0 +1,480 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Sidebar */
+.sidebar{
+    height: 100vh;
+    width: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+body{
+    display: flex;
+}
+.boxes{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.box{
+    height: 18vh;
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+.box i{
+    font-size: 40px;
+}
+.box p{
+    font-size: 16px;
+    padding-top: 7px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.color:hover{
+    background-color: rgb(65, 65, 65);
+}
+.boxes a{
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Mainbody */
+.mainbody{
+    background-color: black;
+    width: 90%;
+    color: white;
+    margin-left: 10%;
+}
+.pic{
+    width: 100%;
+    display: flex;
+}
+.pic_text{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pic_text h1{
+    color: white;
+}
+.pic_text h3{
+    color: rgb(207, 207, 207);
+    padding-top: 20px;
+}
+.picture{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.picture img{
+    height: 90vh;
+}
+/* Watsapp btn */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Bottom se upar ka distance */
+    right: 20px;  /* Right side ka distance */
+    background-color: #12bf42;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: bounce 1s infinite;
+    z-index: 9999; /* Hamesha upar dikhne ke liye */
+}
+
+.whatsapp-float:hover {
+    background-color: #0fa337;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+/* About */
+.about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about_box{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_bx{
+    height: 10vh;
+    width: 20%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_bx h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.about_text{
+    width: 60%;
+    height: 50vh;
+    font-size: 17px;
+}
+/* Watsapp_btn */
+.watsapp_btn a i{
+    font-size: 30px;
+}
+/* Skills */
+.skills{
+    height: 100vh;
+    width: 100%;
+}
+.sk_pic{
+    height: 30vh;
+    width: 15%;
+}
+.skill_pic{
+    height:65vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.part1{
+    height: 25vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.part1 img{
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part2{
+    height: 25vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.part2 img{
+    height: 8rem;
+}
+/* Contact */
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+form{
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fields{
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.field{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+label{
+    font-size: 25px;
+    font-weight: bold;
+}
+input{
+    height: 8vh;
+    width: 70%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    color: white;
+    font-size: 17px;
+    padding-left: 10px;
+}
+textarea{
+    height: 8vh;
+    width: 70%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    color: white;
+    font-size: 17px;
+    padding-left: 10px;
+}
+input::placeholder{
+    color: rgb(201, 201, 201);
+    font-size: 17px;
+    padding-left: 10px;
+}
+textarea::placeholder{
+    color: rgb(201, 201, 201);
+    font-size: 17px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+button{
+    height: 6vh;
+    width: 70%;
+    color: black;
+    font-size: 18px;
+    background-color: white;
+}
+.color2:hover{
+    background-color: rgb(90, 90, 90);
+    color: white;
+}
+.links a{
+    color: white;
+    font-size: 25px;
+}
+.download{
+    height: 6rem;
+    width: 100%;
+    display: none;
+}
+.cv2{
+    height: 3.5rem;
+    width: 50%;
+}
+.download_btn{
+    height: 3rem;
+    width: 100%;
+    border: 2px solid orange;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.color4:active{
+    color: green;
+}
+
+
+
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media screen and (max-width: 1024px) {
+
+  body{
+    flex-direction: column;
+  }
+
+  /* Sidebar becomes top bar */
+  .sidebar{
+    position: fixed;
+    width: 100%;
+    height: auto;
+  }
+
+  .boxes{
+    flex-direction: row;
+    height: auto;
+  }
+
+  .box{
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .box i{
+    font-size: 20px;
+  }
+
+  .box p{
+    font-size: 12px;
+  }
+
+  /* Main body full width */
+  .mainbody{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+
+  /* Hero section */
+  .pic{
+    flex-direction: column;
+  }
+  .pic_text{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .picture{
+    height: 32rem;
+    justify-content: center;
+  }
+
+  .picture img{
+    height: 30rem;
+    width: 30%;
+  }
+
+  /* Remove fixed heights */
+  .about,
+  .skills,
+  .contact{
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .about_text{
+    width: 60%;
+    height: auto;
+    font-size: 17px;
+  }
+
+  .about_bx{
+    width: 60%;
+  }
+
+  /* Skills layout */
+  .part1,
+  .part2{
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sk_pic{
+    width: 80%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .part1 img,
+  .part2 img{
+    height: 8rem;
+    width: 70%;
+  }
+
+  /* Contact form */
+  .field{
+    gap: 10px;
+  }
+
+  input,
+  button{
+    width: 100%;
+  }
+
+  label{
+    font-size: 25px;
+    padding-right: 10px;
+  }
+
+}
+
+@media (max-width: 600px){
+    body{
+        flex-direction: column;
+    }
+    .sidebar{
+        position: fixed;
+    }
+    .mainbody{
+        margin-top: 5%;
+    }
+    .box i{
+        font-size: 15px;
+    }
+    .pic_text{
+        margin-top: 70px;
+    }
+    .picture{
+        height: 25rem;
+        width: 100%;
+    }
+    .picture img{
+        height: 25rem;
+        width: 47%;
+    }
+    .about_text{
+        width: 80%;
+    }
+    .sk_pic img{
+        width: 80%;
+        height: 6rem;
+    }
+    label{
+        font-size: 15px;
+    }
+    button{
+        width: 80%;
+    }
+    .download{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cv{
+        display: none;
+    }
+}
